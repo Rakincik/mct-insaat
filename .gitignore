@@ -1,0 +1,52 @@
+# OS Metadata
+.DS_Store
+Thumbs.db
+
+# Build & Dependencies
+node_modules
+.next
+.vercel
+dist
+build
+out
+
+# Environment & Private Data
+.env*.local
+src/data/db.json
+mct-insaat.rar
+*.rar
+*.zip
+*.7z
+
+# Selective media allowance (temporarily removed ignore to force add)
+# public/projects/**
+# public/uploads/**
+!public/projects/
+!public/projects/**/
+!public/uploads/
+!public/uploads/**/
+!public/projects/**/*.[jJ][pP][gG]
+!public/projects/**/*.[jJ][pP][eE][gG]
+!public/projects/**/*.[pP][nN][gG]
+!public/projects/**/*.[wW][eE][bB][pP]
+!public/uploads/**/*.[jJ][pP][gG]
+!public/uploads/**/*.[jJ][pP][eE][gG]
+!public/uploads/**/*.[pP][nN][gG]
+!public/uploads/**/*.[wW][eE][bB][pP]
+
+# Allow only essential public files
+!public/logo.jpg
+!public/favicon.ico
+
+# Exclude large video files
+**/*.mp4
+**/*.mov
+**/*.avi
+**/*.mkv
+
+# Logs & Temp
+*.log
+tmp/
+temp/
+backup/
+.cache

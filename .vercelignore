@@ -1,0 +1,52 @@
+# Exclude OS metadata
+.DS_Store
+Thumbs.db
+
+# Exclude build outputs and dependencies
+node_modules
+.next
+.vercel
+dist
+build
+out
+
+# Exclude environment files
+.env*.local
+
+# Aggressive media exclusion (MUST BE IGNORED FOR VERCEL)
+public/uploads/
+# public/projects/
+!public/project-assets/
+public/videos/
+public/images/
+public/blog/
+public/reels/
+public/assets/
+
+# Root-level media files
+*.mp4
+*.mov
+*.webm
+*.avi
+*.mkv
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.ico
+
+# Allow specific essential files back in
+!public/logo.jpg
+!public/favicon.ico
+
+# Exclude local database and backups
+src/data/db.json
+**/*.bak
+**/*.tmp
+temp/
+tmp/
+backup/
+logs/
+*.log
